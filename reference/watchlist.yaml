@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: watchlist
-  version: '1.0'
+  version: '2.0'
   contact:
     name: Leor Brenman
     email: lbrenman@axway.com
@@ -55,32 +55,6 @@ paths:
           description: 'Comma separated list of stock symbols (e.g. aapl,txn,amzn)'
           required: true
           style: form
-  /stockquote:
-    get:
-      summary: Your GET endpoint
-      tags:
-        - StockQuote
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema:
-                $ref: ../models/quote.yaml
-        '400':
-          description: Bad Request
-          content:
-            application/json:
-              schema:
-                type: string
-      operationId: get-stockquote
-      description: Stock Quote
-      parameters:
-        - schema:
-            type: string
-          in: query
-          name: symbol
-          description: Stock symbol (e.g. aapl)
 components:
   schemas: {}
   securitySchemes:
@@ -89,7 +63,6 @@ components:
       type: apiKey
       in: header
 tags:
-  - name: StockQuote
   - name: Watch List
 security:
   - apikey: []
