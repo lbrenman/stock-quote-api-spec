@@ -9,7 +9,7 @@ pipeline {
    }
    
     parameters {
-        string(name: 'host', description: 'API Manager Host Name', defaultValue: 'forrester.demo.axway.com')
+        string(name: 'host', description: 'API Manager Host Name', defaultValue: 'amplify.demo.axway.com')
         string(name: 'stage', description: 'Targer Environment to Deploy', defaultValue: 'staging')
         string(name: 'returnCodeMapping', description: 'Swagger Promote CLI return code mapping', defaultValue: '10:0')
         string(name: 'appName', description: 'API Builder Appname', defaultValue: 'apib_stock_api_v2')
