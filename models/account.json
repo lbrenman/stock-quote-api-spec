@@ -1,0 +1,103 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "accounts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "accountId": {
+                "type": "string"
+              },
+              "displayName": {
+                "type": "string"
+              },
+              "nickname": {
+                "type": "string"
+              },
+              "maskedNumber": {
+                "type": "string"
+              },
+              "openStatus": {
+                "type": "string"
+              },
+              "isOwned": {
+                "type": "boolean"
+              },
+              "productCategory": {
+                "type": "string"
+              },
+              "productName": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string"
+        },
+        "first": {
+          "type": "string"
+        },
+        "prev": {
+          "type": "string"
+        },
+        "next": {
+          "type": "string"
+        },
+        "last": {
+          "type": "string"
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "totalRecords": {
+          "type": "integer"
+        },
+        "totalPages": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "x-examples": {
+    "example-1": {
+      "data": {
+        "accounts": [
+          {
+            "accountId": "string",
+            "displayName": "string",
+            "nickname": "string",
+            "maskedNumber": "string",
+            "openStatus": "OPEN",
+            "isOwned": true,
+            "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+            "productName": "string"
+          }
+        ]
+      },
+      "links": {
+        "self": "string",
+        "first": "string",
+        "prev": "string",
+        "next": "string",
+        "last": "string"
+      },
+      "meta": {
+        "totalRecords": 0,
+        "totalPages": 0
+      }
+    }
+  },
+  "description": "Account"
+}

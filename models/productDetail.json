@@ -1,0 +1,597 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "productId": {
+          "type": "string"
+        },
+        "effectiveFrom": {
+          "type": "string"
+        },
+        "effectiveTo": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "type": "string"
+        },
+        "productCategory": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "brand": {
+          "type": "string"
+        },
+        "brandName": {
+          "type": "string"
+        },
+        "applicationUri": {
+          "type": "string"
+        },
+        "isTailored": {
+          "type": "boolean"
+        },
+        "additionalInformation": {
+          "type": "object",
+          "properties": {
+            "overviewUri": {
+              "type": "string"
+            },
+            "termsUri": {
+              "type": "string"
+            },
+            "eligibilityUri": {
+              "type": "string"
+            },
+            "feesAndPricingUri": {
+              "type": "string"
+            },
+            "bundleUri": {
+              "type": "string"
+            }
+          }
+        },
+        "cardArt": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "imageUri": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "bundles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "additionalInfoUri": {
+                "type": "string"
+              },
+              "productIds": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "featureType": {
+                "type": "string"
+              },
+              "additionalValue": {
+                "type": "string"
+              },
+              "additionalInfo": {
+                "type": "string"
+              },
+              "additionalInfoUri": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "constraintType": {
+                "type": "string"
+              },
+              "additionalValue": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "eligibility": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "eligibilityType": {
+                "type": "string"
+              },
+              "additionalValue": {
+                "type": "string"
+              },
+              "additionalInfo": {
+                "type": "string"
+              },
+              "additionalInfoUri": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "fees": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "feeType": {
+                "type": "string"
+              },
+              "amount": {
+                "type": "string"
+              },
+              "balanceRate": {
+                "type": "string"
+              },
+              "transactionRate": {
+                "type": "string"
+              },
+              "accruedRate": {
+                "type": "string"
+              },
+              "accrualFrequency": {
+                "type": "string"
+              },
+              "currency": {
+                "type": "string"
+              },
+              "additionalValue": {
+                "type": "string"
+              },
+              "additionalInfo": {
+                "type": "string"
+              },
+              "additionalInfoUri": {
+                "type": "string"
+              },
+              "discounts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "description": {
+                      "type": "string"
+                    },
+                    "discountType": {
+                      "type": "string"
+                    },
+                    "amount": {
+                      "type": "string"
+                    },
+                    "balanceRate": {
+                      "type": "string"
+                    },
+                    "transactionRate": {
+                      "type": "string"
+                    },
+                    "accruedRate": {
+                      "type": "string"
+                    },
+                    "feeRate": {
+                      "type": "string"
+                    },
+                    "additionalValue": {
+                      "type": "string"
+                    },
+                    "additionalInfo": {
+                      "type": "string"
+                    },
+                    "additionalInfoUri": {
+                      "type": "string"
+                    },
+                    "eligibility": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "discountEligibilityType": {
+                            "type": "string"
+                          },
+                          "additionalValue": {
+                            "type": "string"
+                          },
+                          "additionalInfo": {
+                            "type": "string"
+                          },
+                          "additionalInfoUri": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "depositRates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "depositRateType": {
+                "type": "string"
+              },
+              "rate": {
+                "type": "string"
+              },
+              "calculationFrequency": {
+                "type": "string"
+              },
+              "applicationFrequency": {
+                "type": "string"
+              },
+              "tiers": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "unitOfMeasure": {
+                      "type": "string"
+                    },
+                    "minimumValue": {
+                      "type": "integer"
+                    },
+                    "maximumValue": {
+                      "type": "integer"
+                    },
+                    "rateApplicationMethod": {
+                      "type": "string"
+                    },
+                    "applicabilityConditions": {
+                      "type": "object",
+                      "properties": {
+                        "additionalInfo": {
+                          "type": "string"
+                        },
+                        "additionalInfoUri": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "additionalInfo": {
+                      "type": "string"
+                    },
+                    "additionalInfoUri": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "additionalValue": {
+                "type": "string"
+              },
+              "additionalInfo": {
+                "type": "string"
+              },
+              "additionalInfoUri": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "lendingRates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lendingRateType": {
+                "type": "string"
+              },
+              "rate": {
+                "type": "string"
+              },
+              "calculationFrequency": {
+                "type": "string"
+              },
+              "applicationFrequency": {
+                "type": "string"
+              },
+              "paymentStructureType": {
+                "type": "string"
+              },
+              "tiers": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "unitOfMeasure": {
+                      "type": "string"
+                    },
+                    "minimumValue": {
+                      "type": "integer"
+                    },
+                    "maximumValue": {
+                      "type": "integer"
+                    },
+                    "rateApplicationMethod": {
+                      "type": "string"
+                    },
+                    "applicabilityConditions": {
+                      "type": "object",
+                      "properties": {
+                        "additionalInfo": {
+                          "type": "string"
+                        },
+                        "additionalInfoUri": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "subTier": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "unitOfMeasure": {
+                          "type": "string"
+                        },
+                        "minimumValue": {
+                          "type": "integer"
+                        },
+                        "maximumValue": {
+                          "type": "integer"
+                        },
+                        "rateApplicationMethod": {
+                          "type": "string"
+                        },
+                        "applicabilityConditions": {
+                          "type": "object",
+                          "properties": {
+                            "additionalInfo": {
+                              "type": "string"
+                            },
+                            "additionalInfoUri": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "additionalValue": {
+                "type": "string"
+              },
+              "additionalInfo": {
+                "type": "string"
+              },
+              "additionalInfoUri": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string"
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "x-examples": {
+    "example-1": {
+      "data": {
+        "productId": "string",
+        "effectiveFrom": "string",
+        "effectiveTo": "string",
+        "lastUpdated": "string",
+        "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+        "name": "string",
+        "description": "string",
+        "brand": "string",
+        "brandName": "string",
+        "applicationUri": "string",
+        "isTailored": true,
+        "additionalInformation": {
+          "overviewUri": "string",
+          "termsUri": "string",
+          "eligibilityUri": "string",
+          "feesAndPricingUri": "string",
+          "bundleUri": "string"
+        },
+        "cardArt": [
+          {
+            "title": "string",
+            "imageUri": "string"
+          }
+        ],
+        "bundles": [
+          {
+            "name": "string",
+            "description": "string",
+            "additionalInfoUri": "string",
+            "productIds": [
+              "string"
+            ]
+          }
+        ],
+        "features": [
+          {
+            "featureType": "ADDITIONAL_CARDS",
+            "additionalValue": "string",
+            "additionalInfo": "string",
+            "additionalInfoUri": "string"
+          }
+        ],
+        "constraints": [
+          {
+            "constraintType": "MIN_BALANCE",
+            "additionalValue": "string"
+          }
+        ],
+        "eligibility": [
+          {
+            "eligibilityType": "BUSINESS",
+            "additionalValue": "string",
+            "additionalInfo": "string",
+            "additionalInfoUri": "string"
+          }
+        ],
+        "fees": [
+          {
+            "name": "string",
+            "feeType": "DEPOSIT",
+            "amount": "string",
+            "balanceRate": "string",
+            "transactionRate": "string",
+            "accruedRate": "string",
+            "accrualFrequency": "string",
+            "currency": "string",
+            "additionalValue": "string",
+            "additionalInfo": "string",
+            "additionalInfoUri": "string",
+            "discounts": [
+              {
+                "description": "string",
+                "discountType": "BALANCE",
+                "amount": "string",
+                "balanceRate": "string",
+                "transactionRate": "string",
+                "accruedRate": "string",
+                "feeRate": "string",
+                "additionalValue": "string",
+                "additionalInfo": "string",
+                "additionalInfoUri": "string",
+                "eligibility": [
+                  {
+                    "discountEligibilityType": "BUSINESS",
+                    "additionalValue": "string",
+                    "additionalInfo": "string",
+                    "additionalInfoUri": "string"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "depositRates": [
+          {
+            "depositRateType": "BONUS",
+            "rate": "string",
+            "calculationFrequency": "string",
+            "applicationFrequency": "string",
+            "tiers": [
+              {
+                "name": "string",
+                "unitOfMeasure": "DOLLAR",
+                "minimumValue": 0,
+                "maximumValue": 0,
+                "rateApplicationMethod": "PER_TIER",
+                "applicabilityConditions": {
+                  "additionalInfo": "string",
+                  "additionalInfoUri": "string"
+                },
+                "additionalInfo": "string",
+                "additionalInfoUri": "string"
+              }
+            ],
+            "additionalValue": "string",
+            "additionalInfo": "string",
+            "additionalInfoUri": "string"
+          }
+        ],
+        "lendingRates": [
+          {
+            "lendingRateType": "FIXED",
+            "rate": "string",
+            "calculationFrequency": "string",
+            "applicationFrequency": "string",
+            "paymentStructureType": "IN_ARREARS",
+            "tiers": [
+              {
+                "name": "string",
+                "unitOfMeasure": "DOLLAR",
+                "minimumValue": 0,
+                "maximumValue": 0,
+                "rateApplicationMethod": "WHOLE_BALANCE",
+                "applicabilityConditions": {
+                  "additionalInfo": "string",
+                  "additionalInfoUri": "string"
+                },
+                "subTier": {
+                  "name": "string",
+                  "unitOfMeasure": "DOLLAR",
+                  "minimumValue": 0,
+                  "maximumValue": 0,
+                  "rateApplicationMethod": "WHOLE_BALANCE",
+                  "applicabilityConditions": {
+                    "additionalInfo": "string",
+                    "additionalInfoUri": "string"
+                  }
+                }
+              }
+            ],
+            "additionalValue": "string",
+            "additionalInfo": "string",
+            "additionalInfoUri": "string"
+          }
+        ]
+      },
+      "links": {
+        "self": "self"
+      },
+      "meta": {}
+    }
+  },
+  "description": "Product details"
+}

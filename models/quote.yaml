@@ -11,3 +11,4 @@ properties:
     type: number
   numShares:
     type: number
+description: Quote

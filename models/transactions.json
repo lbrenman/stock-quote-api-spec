@@ -1,0 +1,144 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "transactions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "accountId": {
+                "type": "string"
+              },
+              "transactionId": {
+                "type": "string"
+              },
+              "isDetailAvailable": {
+                "type": "boolean"
+              },
+              "type": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "postingDateTime": {
+                "type": "string"
+              },
+              "valueDateTime": {
+                "type": "string"
+              },
+              "executionDateTime": {
+                "type": "string"
+              },
+              "amount": {
+                "type": "string"
+              },
+              "currency": {
+                "type": "string"
+              },
+              "reference": {
+                "type": "string"
+              },
+              "merchantName": {
+                "type": "string"
+              },
+              "merchantCategoryCode": {
+                "type": "string"
+              },
+              "billerCode": {
+                "type": "string"
+              },
+              "billerName": {
+                "type": "string"
+              },
+              "crn": {
+                "type": "string"
+              },
+              "apcaNumber": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string"
+        },
+        "first": {
+          "type": "string"
+        },
+        "prev": {
+          "type": "string"
+        },
+        "next": {
+          "type": "string"
+        },
+        "last": {
+          "type": "string"
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "totalRecords": {
+          "type": "integer"
+        },
+        "totalPages": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "x-examples": {
+    "example-1": {
+      "data": {
+        "transactions": [
+          {
+            "accountId": "string",
+            "transactionId": "string",
+            "isDetailAvailable": true,
+            "type": "DIRECT_DEBIT",
+            "status": "PENDING",
+            "description": "string",
+            "postingDateTime": "string",
+            "valueDateTime": "string",
+            "executionDateTime": "string",
+            "amount": "string",
+            "currency": "string",
+            "reference": "string",
+            "merchantName": "string",
+            "merchantCategoryCode": "string",
+            "billerCode": "string",
+            "billerName": "string",
+            "crn": "string",
+            "apcaNumber": "string"
+          }
+        ]
+      },
+      "links": {
+        "self": "string",
+        "first": "string",
+        "prev": "string",
+        "next": "string",
+        "last": "string"
+      },
+      "meta": {
+        "totalRecords": 0,
+        "totalPages": 0
+      }
+    }
+  },
+  "title": "",
+  "description": "Transaction"
+}

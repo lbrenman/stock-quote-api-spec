@@ -1,0 +1,146 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "products": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "productId": {
+                "type": "string"
+              },
+              "effectiveFrom": {
+                "type": "string"
+              },
+              "effectiveTo": {
+                "type": "string"
+              },
+              "lastUpdated": {
+                "type": "string"
+              },
+              "productCategory": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "brand": {
+                "type": "string"
+              },
+              "brandName": {
+                "type": "string"
+              },
+              "applicationUri": {
+                "type": "string"
+              },
+              "isTailored": {
+                "type": "boolean"
+              },
+              "additionalInformation": {
+                "type": "object",
+                "properties": {
+                  "overviewUri": {
+                    "type": "string"
+                  },
+                  "termsUri": {
+                    "type": "string"
+                  },
+                  "eligibilityUri": {
+                    "type": "string"
+                  },
+                  "feesAndPricingUri": {
+                    "type": "string"
+                  },
+                  "bundleUri": {
+                    "type": "string"
+                  }
+                }
+              },
+              "cardArt": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "imageUri": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string"
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "totalRecords": {
+          "type": "integer"
+        },
+        "totalPages": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "x-examples": {
+    "example-1": {
+      "data": {
+        "products": [
+          {
+            "productId": "string",
+            "effectiveFrom": "string",
+            "effectiveTo": "string",
+            "lastUpdated": "string",
+            "productCategory": "TRANS_AND_SAVINGS_ACCOUNTS",
+            "name": "string",
+            "description": "string",
+            "brand": "string",
+            "brandName": "string",
+            "applicationUri": "string",
+            "isTailored": true,
+            "additionalInformation": {
+              "overviewUri": "string",
+              "termsUri": "string",
+              "eligibilityUri": "string",
+              "feesAndPricingUri": "string",
+              "bundleUri": "string"
+            },
+            "cardArt": [
+              {
+                "title": "string",
+                "imageUri": "string"
+              }
+            ]
+          }
+        ]
+      },
+      "links": {
+        "self": "self"
+      },
+      "meta": {
+        "totalRecords": 0,
+        "totalPages": 0
+      }
+    }
+  },
+  "description": "Product"
+}

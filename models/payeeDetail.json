@@ -1,0 +1,215 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "domestic": {
+          "type": "object",
+          "properties": {
+            "payeeAccountUType": {
+              "type": "string"
+            },
+            "payId": {
+              "type": "object",
+              "properties": {
+                "identifier": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                }
+              }
+            },
+            "account": {
+              "type": "object",
+              "properties": {
+                "bsb": {
+                  "type": "string"
+                },
+                "accountName": {
+                  "type": "string"
+                },
+                "accountNumber": {
+                  "type": "string"
+                }
+              }
+            },
+            "card": {
+              "type": "object",
+              "properties": {
+                "cardNumber": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "biller": {
+          "type": "object",
+          "properties": {
+            "billerName": {
+              "type": "string"
+            },
+            "crn": {
+              "type": "string"
+            },
+            "billerCode": {
+              "type": "string"
+            }
+          }
+        },
+        "payeeUType": {
+          "type": "string"
+        },
+        "nickname": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "payeeId": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "creationDate": {
+          "type": "string"
+        },
+        "international": {
+          "type": "object",
+          "properties": {
+            "bankDetails": {
+              "type": "object",
+              "properties": {
+                "country": {
+                  "type": "string"
+                },
+                "routingNumber": {
+                  "type": "string"
+                },
+                "fedWireNumber": {
+                  "type": "string"
+                },
+                "chipNumber": {
+                  "type": "string"
+                },
+                "legalEntityIdentifier": {
+                  "type": "string"
+                },
+                "accountNumber": {
+                  "type": "string"
+                },
+                "bankAddress": {
+                  "type": "object",
+                  "properties": {
+                    "address": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "sortCode": {
+                  "type": "string"
+                },
+                "beneficiaryBankBIC": {
+                  "type": "string"
+                }
+              }
+            },
+            "beneficiaryDetails": {
+              "type": "object",
+              "properties": {
+                "country": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "meta": {
+      "type": "string"
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "x-examples": {
+    "example-1": {
+      "data": {
+        "domestic": {
+          "payeeAccountUType": "account",
+          "payId": {
+            "identifier": "identifier",
+            "name": "name",
+            "type": "EMAIL"
+          },
+          "account": {
+            "bsb": "bsb",
+            "accountName": "accountName",
+            "accountNumber": "accountNumber"
+          },
+          "card": {
+            "cardNumber": "cardNumber"
+          }
+        },
+        "biller": {
+          "billerName": "billerName",
+          "crn": "crn",
+          "billerCode": "billerCode"
+        },
+        "payeeUType": "domestic",
+        "nickname": "nickname",
+        "description": "description",
+        "payeeId": "payeeId",
+        "type": "DOMESTIC",
+        "creationDate": "creationDate",
+        "international": {
+          "bankDetails": {
+            "country": "country",
+            "routingNumber": "routingNumber",
+            "fedWireNumber": "fedWireNumber",
+            "chipNumber": "chipNumber",
+            "legalEntityIdentifier": "legalEntityIdentifier",
+            "accountNumber": "accountNumber",
+            "bankAddress": {
+              "address": "address",
+              "name": "name"
+            },
+            "sortCode": "sortCode",
+            "beneficiaryBankBIC": "beneficiaryBankBIC"
+          },
+          "beneficiaryDetails": {
+            "country": "country",
+            "name": "name",
+            "message": "message"
+          }
+        }
+      },
+      "meta": "{}",
+      "links": {
+        "self": "self"
+      }
+    }
+  },
+  "description": "Payee details"
+}

@@ -1,0 +1,85 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "directDebitAuthorisations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "accountId": {
+                "type": "string"
+              },
+              "authorisedEntity": {
+                "type": "object",
+                "properties": {
+                  "abn": {
+                    "type": "string"
+                  },
+                  "acn": {
+                    "type": "string"
+                  },
+                  "ardn": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "financialInstitution": {
+                    "type": "string"
+                  }
+                }
+              },
+              "lastDebitDateTime": {
+                "type": "string"
+              },
+              "lastDebitAmount": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string"
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "x-examples": {
+    "example-1": {
+      "data": {
+        "directDebitAuthorisations": [
+          {
+            "accountId": "string",
+            "authorisedEntity": {
+              "abn": "string",
+              "acn": "string",
+              "ardn": "string",
+              "description": "string",
+              "financialInstitution": "string"
+            },
+            "lastDebitDateTime": "string",
+            "lastDebitAmount": "string"
+          }
+        ]
+      },
+      "links": {
+        "self": "self"
+      },
+      "meta": {}
+    }
+  },
+  "description": "Direct debits",
+  "title": ""
+}

@@ -1,0 +1,98 @@
+{
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "payees": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "nickname": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "payeeId": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "creationDate": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "totalRecords": {
+          "type": "integer"
+        },
+        "totalPages": {
+          "type": "integer"
+        }
+      }
+    },
+    "links": {
+      "type": "object",
+      "properties": {
+        "next": {
+          "type": "string"
+        },
+        "last": {
+          "type": "string"
+        },
+        "prev": {
+          "type": "string"
+        },
+        "self": {
+          "type": "string"
+        },
+        "first": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "x-examples": {
+    "example-1": {
+      "data": {
+        "payees": [
+          {
+            "nickname": "nickname",
+            "description": "description",
+            "payeeId": "payeeId",
+            "type": "DOMESTIC",
+            "creationDate": "creationDate"
+          },
+          {
+            "nickname": "nickname",
+            "description": "description",
+            "payeeId": "payeeId",
+            "type": "DOMESTIC",
+            "creationDate": "creationDate"
+          }
+        ]
+      },
+      "meta": {
+        "totalRecords": 0,
+        "totalPages": 6
+      },
+      "links": {
+        "next": "next",
+        "last": "last",
+        "prev": "prev",
+        "self": "self",
+        "first": "first"
+      }
+    }
+  },
+  "description": "Payee"
+}

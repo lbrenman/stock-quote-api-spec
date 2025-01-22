@@ -1,0 +1,44 @@
+type: object
+properties:
+  data:
+    type: object
+    properties:
+      accountId:
+        type: string
+      currentBalance:
+        type: string
+      availableBalance:
+        type: string
+      creditLimit:
+        type: string
+      amortisedLimit:
+        type: string
+      currency:
+        type: string
+      purses:
+        type: array
+        items:
+          type: object
+          properties: {}
+  links:
+    type: object
+    properties:
+      self:
+        type: string
+  meta:
+    type: object
+    properties: {}
+x-examples:
+  example-1:
+    data:
+      accountId: string
+      currentBalance: string
+      availableBalance: string
+      creditLimit: string
+      amortisedLimit: string
+      currency: string
+      purses: []
+    links:
+      self: self
+    meta: {}
+description: Account Balance

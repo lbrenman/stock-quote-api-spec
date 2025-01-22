@@ -5,7 +5,11 @@ info:
   contact:
     name: Leor Brenman
     email: lbrenman@axway.com
+    url: https://www.axway.com/contact
   description: Stock Watch List API
+  license:
+    name: N/A
+    url: https://www.axway.com/license
 servers:
   - url: 'http://localhost:8080/api'
     description: Local
@@ -84,12 +88,14 @@ paths:
 components:
   schemas: {}
   securitySchemes:
-    apikey:
-      name: apikey
+    apiKey:
+      name: API Key
       type: apiKey
       in: header
 tags:
   - name: StockQuote
+    description: Stock quote
   - name: Watch List
+    description: Watch List
 security:
-  - apikey: []
+  - apiKey: []

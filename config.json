@@ -5,51 +5,56 @@
 	"version": "1.0.0",
 	"organization": "API Development",
 	"apiDefinition": "openapi.yaml",
-	"vhost": "forrester.demo.axway.com:8065",
+	"vhost": "amplify.demo.axway.com:8065",
 	"image": "stock.png",
-	"backendBasepath": "https://api.ars.us.axway.com/api",
+	"backendBasepath": "https://engie-sandbox-design.aws-us2.dxchange.cloud:9443/v2",
 	"descriptionType": "markdownLocal",
 	"markdownLocal": [
-	  "docs/Intro.md", "docs/Security.md"
+	  "docs/Intro.md",
+	  "docs/Security.md"
 	],
 	"tags": {
-		"Imagine": [
-			"Axway",
-			"Chantilly"
-		]
+	  "Imagine": [
+		"Axway",
+		"Chantilly"
+	  ]
 	},
-	"authenticationProfiles": [{
-		"name": "_default",
-		"isDefault": "true",
-		"parameters": {
-			"apiKey": "zSi3JeWExBJuCsLj5vumcPMrQFaYTOLa",
-			"apiKeyField": "apikey",
-			"httpLocation": "HEADER"
-		},
-		"type": "apiKey"
-	}],
-	"securityProfiles": [{
+	"securityProfiles": [
+	  {
 		"name": "_default",
 		"isDefault": true,
-		"devices": [{
+		"devices": [
+		  {
 			"name": "API Key",
 			"type": "apiKey",
 			"order": 0,
 			"properties": {
-				"apiKeyFieldName": "KeyId",
-				"takeFrom": "HEADER",
-				"removeCredentialsOnSuccess": "true"
+			  "apiKeyFieldName": "KeyId",
+			  "takeFrom": "HEADER",
+			  "removeCredentialsOnSuccess": "true"
 			}
-		}]
-	}],
-	"clientOrganizations": [
-		"ALL"
+		  }
+		]
+	  }
 	],
-	"applications": [{
-		"name": "Test"
-	}],
+	"caCerts": [
+	  {
+		"certFile": "root.pem",
+		"inbound": "false",
+		"outbound": "true"
+	  },
+	  {
+		"certFile": "inter.pem",
+		"inbound": "false",
+		"outbound": "true"
+	  }
+	],
+	"clientOrganizations": [
+	  "ALL"
+	],
 	"customProperties": {
-		"securityLevel": "public",
-		"publicAPI": true
+	  "securityLevel": "public",
+	  "publicAPI": true
 	}
-}
+  }
+  
